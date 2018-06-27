@@ -1,0 +1,478 @@
+* {
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+  min-height: 100%;
+}
+
+body {
+	background-color: #ccc;
+	color: #fff;
+	font-family: "Times New Roman",Times,Arial,serif;
+	font-size: 1em;
+}
+
+h1{
+	font-size: 2rem;
+	line-height: 4rem;
+	margin: 10px;
+	text-align: center;
+}
+
+h2 {
+  color: #5B7D17;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  line-height:42px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* ----------------------Header-------------------------*/
+header {
+  background-color: #222;
+}
+
+header h1 {
+  margin: 0;
+  color: #ccc;
+}
+
+header img {
+  width: 25%;
+  max-width: 100%;
+  display: none;
+  margin: 0 auto;
+}
+
+/* -------------------------Nav-------------------------*/
+
+
+nav {
+  background-color: #5B7D17;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5B7D17;
+  width: 100%;
+}
+
+nav li {
+  float: none;
+}
+
+nav li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: #153F6F;
+	color: #000;
+	text-decoration: none;
+}
+
+/* -------------------------Main------------------------*/
+main {
+  background-color: #fff;
+}
+
+main a {
+  color: #ccc;
+}
+
+main a:hover {
+  color: #5B7D17;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+p#email {
+	margin: 10px;
+	text-align: center;
+}
+
+/*----------------------About Me---------------------------*/
+
+article#about {
+  color: #fff;
+  background-image: url("images/aboutback.svg");
+  background-size: cover;
+}
+
+article#about div.textbox {
+  background-color: #ccc;
+  opacity: 0.8;
+  padding: 1em;
+}
+
+article#about div.textbox h1 {
+    font-weight: bold;
+    color: #000;
+}
+
+article#about div.textbox p {
+    margin: 1em;
+    font-weight: bold;
+    color: #000;
+}
+
+/*----------------------Resume Specific Styling----------- */
+
+article#resume {
+  color: #222;
+  background-image: url("images/resback.jpg");
+  background-size: cover;
+}
+
+article#resume a {
+  color: #222;
+}
+
+main aside, article#exp {
+  padding: 15px;
+}
+
+h5#ref {
+	text-align: center;
+	font-weight: bold;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.title {
+   background-color: #5B7D17;
+   color: #06121F;
+   cursor: pointer;
+   padding: 18px;
+   width: 100%;
+   text-align: left;
+   border: none;
+   outline: none;
+   border-radius: 30px 30px 0 0;
+}
+
+button.title:hover {
+  color: #fff;
+  background-color: #315E31;
+}
+
+#webdeveloper:hover {
+  background-color: #009900;
+}
+
+#ku:hover {
+  background-color: #0051BA;
+}
+
+#thd:hover {
+  background-color: #f96302;
+}
+
+#symplr:hover {
+  background-color: #EF4C25;
+}
+
+#dod:hover {
+  background: linear-gradient(to bottom, #bf0a30 33%, #fff 50%, #002868 100%);
+  color: #000;
+}
+
+#army:hover {
+  background-color: #535640;
+}
+
+#kued:hover {
+  background-color: #0051BA;
+}
+
+/* Style the panel.*/
+.panel {
+    padding: 0 18px;
+    background-color: #ccc;
+    color: #000;
+    border-radius: 0 0 30px 30px;
+    margin: 0 0 1em 0;
+}
+
+.panel p {
+  padding: 10px;
+}
+
+.panel ul {
+  list-style-type: disc;
+  padding: .5em;
+}
+
+/* -----------------------LinkinIn Image--------------*/
+#liimg {
+  width: 10%;
+}
+
+/*-----------------------Projects specific------------*/
+
+article#projects {
+  background-image: url("images/projback.jpg");
+  background-size: cover;
+  color: #000;
+}
+
+article#projects div.textbox {
+  background-color: #ccc;
+  opacity: 0.8;
+  padding: 1em;
+}
+
+article#projects div.textbox li {
+    margin: 1em;
+    font-weight: bold;
+}
+
+article#projects div.textbox li a {
+    font-weight: bold;
+    color: #000;
+}
+
+article#projects h2 {
+  text-align: center;
+}
+
+#proj {
+	padding: 20px;
+	margin: 0 0 0 10px;
+}
+
+#proj li {
+  padding: 10px;
+}
+
+main::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*-----------------------Footer-------------------- */
+footer {
+  background-color: #06121F;
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+
+footer a {
+  color: #ccc;
+}
+
+footer img {
+  vertical-align: middle;
+  margin: 0;
+}
+
+.foot {
+  margin: 0;
+}
+
+@media only screen and (min-width: 700px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    body{
+      font-size: 1em;
+    }
+
+    h1,.h1{
+    	font-size: 2em;
+    	line-height: 4em;
+    	margin: 10px;
+    	text-align: center;
+    }
+
+    h2,.h2{
+    	font-size: 1.5rem;
+    }
+
+    header img {
+      width: 25%;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /*Nav bar*/
+
+    nav {
+      background-color: #5B7D17;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #5B7D17;
+    }
+
+    nav li {
+      float: left;
+    }
+
+    nav li a {
+      display: block;
+      color: #000;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav li a:hover {
+    	background-color: #153F6F;
+    	color: #fff;
+    	text-decoration: none;
+    }
+
+    footer img {
+      vertical-align: middle;
+      margin: 0 15px;
+    }
+
+    .foot {
+      margin: 0 20px 0 0;
+    }
+
+    /* LinkinIn Image */
+    #liimg {
+      width: 10%;
+    }
+}
+
+/*-----------------------For desktop---------------------*/
+@media only screen and (min-width: 800px) {
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    body{
+      font-size: 1.25em;
+    }
+
+    h1,.h1{
+    	font-size: 2.5em;
+    	line-height: 4rem;
+    	margin: 10px;
+    	text-align: center;
+    }
+
+    h2,.h2{
+    	font-size: 2em;
+    	line-height:42px;
+      text-align: center;
+    }
+
+    h3,.h3{
+      font-size: 1.5em;
+      line-height:42px;
+    }
+
+    header img {
+      width: 25%;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    main article {
+      padding: 5em;
+    }
+
+    /*-------------------------Nav bar------------------------*/
+
+    nav {
+      background-color: #5B7D17;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #5B7D17;
+    }
+
+    nav li {
+      float: left;
+    }
+
+    nav li a {
+      display: block;
+      color: #000;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav li a:hover {
+    	background-color: #153F6F;
+    	color: #fff;
+    	text-decoration: none;
+    }
+
+    footer img {
+      vertical-align: middle;
+      margin: 0 15px;
+    }
+
+    .foot {
+      margin: 0 20px 0 0;
+    }
+
+    /* LinkinIn Image */
+    #liimg {
+      width: 2%;
+    }
+}
