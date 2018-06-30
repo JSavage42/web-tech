@@ -1,0 +1,44 @@
+*{padding:0;margin:0;}
+
+:root {
+  --body-font-color: #07202A;
+  --background-color: #D5EA8A;
+  --button-bg: #aaa;
+  --button-border: none;
+  --button-border-radius: 5em;
+}
+
+body {
+  color: var(--body-font-color);
+  background-color: var(--background-color);
+}
+
+#app {
+  width: 100%;
+  margin: 2em;
+}
+
+#buttons {
+  width: 100%;
+  margin: .5em;
+}
+
+.button {
+  background-color: var(--button-bg);
+  border: var(--button-border);
+  margin: .5em;
+  padding: 1em;
+  border-radius: var(--button-border-radius);
+}
+
+#jobListing {
+  padding: 1em;
+}
+
+#jobListing ul {
+  margin: 1em 2em;
+}
+
+#headshot {
+  width: 50%;
+}
