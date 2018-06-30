@@ -7,11 +7,25 @@ const app = {
   picture: ''
 };
 
+const kcit = () => {
+  app.job = 'Cerner';
+  app.description =
+    <div>
+      <p>Kansas City, MO <em>Innovations Campus</em><br />
+      <em>KCIT Software Engineer Apprentice</em> | July 2018 - Present</p>
+      <ul>
+        <li>Worked with React.js, Java 7 & 8, Webpack, and RabbitMQ</li>
+      </ul>
+    </div>
+    ;
+  app.picture = <img src="assets/images/cernerimg.png" id="cernerimg" />;
+  renderResumeApp();
+}
 const webdev = () => {
   app.job = 'Freelance Web Developer';
   app.description =
     <div>
-    <p>December 2017 - Present</p>
+    <p>December 2017 - July 2018</p>
     <ul>
       <li>Design and code websites for clients.</li>
       <li>Have been making websites since 2004, recently<br /> got caught up with HTML5
@@ -26,14 +40,15 @@ const ku = () => {
   app.job = 'The University of Kansas';
   app.description =
     <div>
-      <p><em>Grader</em> | January 2018 - May 2018</p>
+      <p>Overland Park, KS <em>Edwards Campus</em><br />
+      <em>Grader</em> | January 2018 - May 2018</p>
       <ul>
         <li>Graded papers for IT310.</li>
         <li>Assisted the Professor with any other tasks he needed.</li>
       </ul>
     </div>
   ;
-    app.picture = <img src="/assets/images/ku.jpg" id="kupicture" />;
+    app.picture = <img src="/assets/images/ku.png" id="kupicture" />;
   renderResumeApp();
 }
 const thd = () => {
@@ -50,7 +65,7 @@ const thd = () => {
       </ul>
     </div>
   ;
-  app.picture = <img src="/assets/images/thd.jpg" id="thdpicture" />;
+  app.picture = <img src="/assets/images/thd.png" id="thdpicture" />;
   renderResumeApp();
 }
 const symplr = () => {
@@ -69,7 +84,7 @@ const symplr = () => {
       </ul>
     </div>
   ;
-  app.picture = <img src="/assets/images/sym.jpg" id="sympicture" />;
+  app.picture = <img src="/assets/images/sym.png" id="sympicture" />;
   renderResumeApp();
 }
 const dod = () => {
@@ -122,6 +137,7 @@ const renderResumeApp = () => {
     <div className="resume">
       <h1>{app.title}</h1>
       <div id="buttons">
+        <button className="button" onClick={kcit}>Cerner Corp.</button>
         <button className="button" onClick={webdev}>Freelance Web Developer</button>
         <button className="button" onClick={ku}>The University of Kansas</button>
         <button className="button" onClick={thd}>The Home Depot</button>

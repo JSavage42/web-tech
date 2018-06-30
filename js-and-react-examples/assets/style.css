@@ -11,16 +11,22 @@
 body {
   color: var(--body-font-color);
   background-color: var(--background-color);
+  height: 100%;
 }
 
 #app {
   width: 100%;
-  margin: 2em;
+  margin: .25em;
+}
+
+.resume {
+  max-width: 100%;
+  margin: 1em;
 }
 
 #buttons {
   width: 100%;
-  margin: .5em;
+  margin: .25em;
 }
 
 .button {
@@ -32,13 +38,13 @@ body {
 }
 
 #jobListing {
-  padding: 1em;
+  padding: .25em;
 }
 
 #jobListing ul {
-  margin: 1em 2em;
+  margin: .25em 1.5em;
 }
 
-#headshot {
+.resume img {
   width: 50%;
 }

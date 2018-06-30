@@ -9,6 +9,41 @@ var app = {
   picture: ''
 };
 
+var kcit = function kcit() {
+  app.job = 'Cerner';
+  app.description = React.createElement(
+    'div',
+    null,
+    React.createElement(
+      'p',
+      null,
+      'Kansas City, MO ',
+      React.createElement(
+        'em',
+        null,
+        'Innovations Campus'
+      ),
+      React.createElement('br', null),
+      React.createElement(
+        'em',
+        null,
+        'KCIT Software Engineer Apprentice'
+      ),
+      ' | July 2018 - Present'
+    ),
+    React.createElement(
+      'ul',
+      null,
+      React.createElement(
+        'li',
+        null,
+        'Worked with React.js, Java 7 & 8, Webpack, and RabbitMQ'
+      )
+    )
+  );
+  app.picture = React.createElement('img', { src: 'assets/images/cernerimg.png', id: 'cernerimg' });
+  renderResumeApp();
+};
 var webdev = function webdev() {
   app.job = 'Freelance Web Developer';
   app.description = React.createElement(
@@ -17,7 +52,7 @@ var webdev = function webdev() {
     React.createElement(
       'p',
       null,
-      'December 2017 - Present'
+      'December 2017 - July 2018'
     ),
     React.createElement(
       'ul',
@@ -47,6 +82,13 @@ var ku = function ku() {
     React.createElement(
       'p',
       null,
+      'Overland Park, KS ',
+      React.createElement(
+        'em',
+        null,
+        'Edwards Campus'
+      ),
+      React.createElement('br', null),
       React.createElement(
         'em',
         null,
@@ -69,7 +111,7 @@ var ku = function ku() {
       )
     )
   );
-  app.picture = React.createElement('img', { src: '/assets/images/ku.jpg', id: 'kupicture' });
+  app.picture = React.createElement('img', { src: '/assets/images/ku.png', id: 'kupicture' });
   renderResumeApp();
 };
 var thd = function thd() {
@@ -119,7 +161,7 @@ var thd = function thd() {
       )
     )
   );
-  app.picture = React.createElement('img', { src: '/assets/images/thd.jpg', id: 'thdpicture' });
+  app.picture = React.createElement('img', { src: '/assets/images/thd.png', id: 'thdpicture' });
   renderResumeApp();
 };
 var symplr = function symplr() {
@@ -174,7 +216,7 @@ var symplr = function symplr() {
       )
     )
   );
-  app.picture = React.createElement('img', { src: '/assets/images/sym.jpg', id: 'sympicture' });
+  app.picture = React.createElement('img', { src: '/assets/images/sym.png', id: 'sympicture' });
   renderResumeApp();
 };
 var dod = function dod() {
@@ -298,6 +340,11 @@ var renderResumeApp = function renderResumeApp() {
     React.createElement(
       'div',
       { id: 'buttons' },
+      React.createElement(
+        'button',
+        { className: 'button', onClick: kcit },
+        'Cerner Corp.'
+      ),
       React.createElement(
         'button',
         { className: 'button', onClick: webdev },
