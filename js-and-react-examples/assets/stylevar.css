@@ -1,0 +1,135 @@
+*{padding:0;margin:0;}
+
+:root {
+  --body-font-color: #07202A;
+  --grid-gap: 0;
+  --header-bg-color: #94B323;
+  --main-cell-bg-color: #D5EA8A;
+  --main-border: 1px solid #000;
+  --main-h2-color: #2A647B;
+  --picture-img-width: 100%;
+  --picture-img-fit: cover;
+  --footer-bg-color: #07202A;
+  --footer-font-color: #94B323;
+}
+
+body {
+  color: var(--body-font-color);
+}
+
+main {
+  width: 100%;
+  display: grid;
+  grid-auto-columns: minmax(2fr, auto);
+  grid-auto-rows: minmax(1fr, auto);
+  grid-gap: var(--grid-gap);
+  grid-template-areas:
+    "header"
+    "picture"
+    "about"
+    "resume"
+    "education"
+    "projects"
+    "footer";
+}
+
+/* ------------------------------- Animation ------------------------- */
+/*@keyframes example {
+  0% {background-color: red;}
+  20% {background-color: yellow;}
+  40% {background-color: green;}
+  60% {background-color: blue;}
+  80% {background-color: purple}
+  100% {background-color: red;}
+}*/
+
+header {
+  grid-area: header;
+  border-bottom: var(--main-border);
+  text-align: center;
+  padding: 2em;
+  background-color: var(--header-bg-color);
+/*  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;*/
+}
+
+main div {
+  border: var(--main-border);
+}
+
+main div h2 {
+  text-align: center;
+  color: var(--main-h2-color);
+}
+
+main div ul {
+  margin: 0 0 2em 0;
+}
+
+main div ul li {
+  margin: 0 0 0 2em;
+}
+
+main div ol li {
+  margin: 0 0 0 1.25em;
+}
+
+.about {
+  background-color: var(--main-cell-bg-color);
+  grid-area: about;
+  padding: 2em;
+}
+
+.resume {
+  grid-area: resume;
+  padding: 2em;
+  background-color: var(--main-cell-bg-color);
+}
+
+.education {
+  grid-area: education;
+  padding:  0.625em 1.875em;
+  background-color: var(--main-cell-bg-color);
+}
+
+.projects {
+  grid-area: projects;
+  padding: 2em;
+  background-color: var(--main-cell-bg-color);
+}
+
+.picture {
+  grid-area: picture;
+  background-color: var(--main-cell-bg-color);
+}
+
+.picture img {
+  width: var(--picture-img-width);
+  object-fit: var(--picture-img-fit);
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  border-top: var(--main-border);
+  padding: 2em;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-font-color);
+}
+
+@media all and (min-width: 800px) {
+  main {
+    width: 100%;
+    display: grid;
+    grid-auto-columns: minmax(2fr, auto);
+    grid-auto-rows: minmax(1fr, auto);
+    grid-gap: 0;
+    grid-template-areas:
+      "header header header"
+      "resume about projects"
+      "resume picture projects"
+      "resume education education"
+      "footer footer footer";
+  }
+}
